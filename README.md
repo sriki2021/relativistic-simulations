@@ -13,7 +13,7 @@ This project contains four simulations of curved spacetime built from scratch in
 | Project | What it does | Preview |
 |---|---|---|
 | [**Schwarzschild geodesics**](01-schwarzschild-geodesics) | Interactive simulator: launch light or particles around a black hole and watch their paths alongside a live Penrose diagram | ![](01-schwarzschild-geodesics/media/precessing_orbit.jpg) |
-| [**Kerr black hole ray tracer**](02-kerr-raytracer) | GPU ray tracer of a spinning black hole with a glowing, volumetric accretion disk validated against analytic results · [video](https://www.youtube.com/watch?v=WAsO6kQBz_Y) | ![](<02-kerr-raytracer/progression/Kerr (spinning) black hole.png>) |
+| [**Kerr black hole ray tracer**](02-kerr-raytracer) | GPU ray tracer of a spinning black hole with a glowing, volumetric accretion disk validated against analytic results · [video](https://www.youtube.com/watch?v=WAsO6kQBz_Y) | ![](<02-kerr-raytracer/progression/7. Kerr (spinning) black hole close up.png>) |
 | [**Ellis wormhole**](03-ellis-wormhole) | A camera flying through a traversable wormhole into another universe · [video](https://www.youtube.com/watch?v=IK4DtV514to) | ![](03-ellis-wormhole/media/main.png) |
 | [**Alcubierre warp drive**](04-alcubierre-drive) | What a stationary observer sees as a faster-than-light warp bubble passes by ·[video](https://www.youtube.com/watch?v=uu0EVItuHY8) | ![](04-alcubierre-drive/media/animation.gif) |
 

@@ -1,6 +1,6 @@
 # Ray tracing a Kerr Black Hole
 
-![Close up of a spinning black hole with glowing accretion disk](<progression/Kerr (spinning) black hole.png>)
+![Close up of a spinning black hole with glowing accretion disk](<progression/7. Kerr (spinning) black hole close up.png>)
 
 ▶ **[Full render on YouTube](https://www.youtube.com/watch?v=WAsO6kQBz_Y)** 
 
@@ -65,17 +65,17 @@ where $R(r)$ and $\Theta(\theta)$ are the radial and polar potentials. Second or
 ![Shadow asymmetry scaling spin parameter](docs/figures/fig5_asymmetry.png)
 As spin increases, the shadow shifts sideways (linearly with spin) and flattens sharply above a ~ 0.8, but its area changes by only around 10%.
 
-The results come from the CREST report. Code for the figures (original, not cleaned up and made for v16) available ![here](docs/figures).
+The results come from the CREST report. Code for the figures (original, not cleaned up and made for v16) available at docs/figures.
 
 
 ## Problems I solved
 
 Full image gallery with captions: [progression/](progression/)
 
-| Before | After | What happened |
-|---|---|---|
-| ![](progression/rk4_pole_artifact.png) | ![](progression/rk45_pole_fixed.png) | **Line of artefacts at the pole.** Fixed-step RK4 integrated previously jumped over the region near θ = 0 where the equations (in spherical Boyer-Lindquist coordinates) change rapidly. Many hacks I tried (v09) failed. This issue was finally resolved by switching to adaptive RK45 (v11) which mitigated numerical instability near the pole, fixed the artefacts and was also faster. |
-| ![](progression/ZAMO_partition_bug.jpg) | ![](progression/ZAMO_fixed.jpg) | **Screen split into different views near the hole.** The rays assumed the camera is at rest relative to distant stars, which is impossible near a spinning black hole due to frame dragging, resulting in a partition when the camera came close to the event horizon. This was fixed by launching rays from a ZAMO (Zero Angular Momentum Observer) frame (v15) rather than at rest. | 
+| Before / After | What happened |
+|---|---|
+| ![](progression/9.Pole_artefact.png) | **Line of artefacts at the pole.** Fixed-step RK4 integrated previously jumped over the region near θ = 0 where the equations (in spherical Boyer-Lindquist coordinates) change rapidly. Many hacks I tried (v09) failed. This issue was finally resolved by switching to adaptive RK45 (v11) which mitigated numerical instability near the pole, fixed the artefacts and was also faster. |
+| ![](progression/10.ZAMO_partition.png) | **Screen split into different views near the hole.** The rays assumed the camera is at rest relative to distant stars, which is impossible near a spinning black hole due to frame dragging, resulting in a partition when the camera came close to the event horizon. This was fixed by launching rays from a ZAMO (Zero Angular Momentum Observer) frame (v15) rather than at rest. | 
 
 
 ## Limitations
