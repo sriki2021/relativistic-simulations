@@ -1,0 +1,19 @@
+# Python 3.10+
+# FFmpeg (for stitching video frames) is a separate install: https://ffmpeg.org/
+
+# ── Shared ─────────────────────────────────────────────
+numpy
+matplotlib          # Kerr validation/analysis scripts and some archived versions
+
+# ── 01 - Schwarzschild geodesics ───────────────────────
+pyvista             # 3D visualisation and interactive widgets
+vtk                 # second renderer for the Penrose diagram
+colour-science      # wavelength → RGB for photon redshift colours (NOT "colour", a different package)
+
+# ── 02-04 - Ray tracers (Kerr, Ellis wormhole, Alcubierre) ──
+taichi              # GPU kernels (CUDA on NVIDIA; Vulkan/Metal/CPU otherwise)
+opencv-python       # image loading and PNG output
+OpenEXR>=3.3        # loading the NASA star map (.exr); uses the OpenEXR.File API
+
+# ── Only needed to run some archived versions ──────────
+numba               # Kerr v06–v11 (CPU-parallel versions)
